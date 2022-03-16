@@ -1,1 +1,1 @@
-# JSFighter
+# Random Fight
