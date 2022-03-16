@@ -227,7 +227,7 @@ function hideControls() {
 function showControls() {
     // Write three buttons for 'Single', 'Double', and 'Recover'. but the object names must be correct
     // We use tricky JS syntax tricks to insert the right player number into the html string
-    controls.innerHTML = '<button class="inputs inputPlayer' + (playerTurn ? 1 : 0) + '" type="button" onclick="Player' + (playerTurn ? 1 : 0) + '.sinh(Player' + (!playerTurn ? 1 : 0) + ')">Single</button>';
+    controls.innerHTML = '<button class="inputs inputPlayer' + (playerTurn ? 1 : 0) + '" type="button" onclick="Player' + (playerTurn ? 1 : 0) + '.single(Player' + (!playerTurn ? 1 : 0) + ')">Single</button>';
     controls.innerHTML += '<button class="inputs inputPlayer' + (playerTurn ? 1 : 0) + '" type="button" onclick="Player' + (playerTurn ? 1 : 0) + '.double(Player' + (!playerTurn ? 1 : 0) + ')">Double [2 SP]</button>';
     controls.innerHTML += '<button class="inputs inputPlayer' + (playerTurn ? 1 : 0) + '" type="button" onclick="Player' + (playerTurn ? 1 : 0) + '.recover(Player' + (!playerTurn ? 1 : 0) + ')">Recover [3 SP]</button>';
 }
